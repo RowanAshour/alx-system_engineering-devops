@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name "*.html" -newer "$(dirname "$(pwd)")" -exec cp -u {} "$(dirname "$(dirname "$(pwd)")")" \;
+find . -name "*.html" -newer "$(0x00-shell_basics "$(pwd)")" -exec cp -u {} "$(0x00-shell_basics "$(0x00-shell_basics "$(pwd)")")" \;
