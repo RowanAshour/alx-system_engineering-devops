@@ -1,2 +1,2 @@
 #!/bin/bash
-filename="iacta"; [ -f "$filename" ] grep -n "" "$filename" | sed -n '3p' | cut -d: -f2-
+head -n 3 iacta | tail -n 1
