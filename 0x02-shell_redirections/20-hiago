@@ -1,2 +1,2 @@
 #!/bin/bash
-input="Your input with c and C"; output=$(echo "$input" | tr -d 'cC'); echo "$output"
+echo "$1" | sed 's/[cC]//g'
