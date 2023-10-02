@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lt | sort | tail -n 10
+ls -lt | grep '^-' | head -n 10 | awk '{print $NF}'
