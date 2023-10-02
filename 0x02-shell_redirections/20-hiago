@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$*" | tr -d "cC"
+input="Your input with c and C"; output=$(echo "$input" | tr -d 'cC'); echo "$output"
