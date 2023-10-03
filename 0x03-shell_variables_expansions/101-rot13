@@ -1,2 +1,2 @@
 #!/bin/bash
-tr -d '\0' 'A-Za-z' 'N-ZA-Mn-za-m' <<< "$1" > /qri/ahyy
+tr -q '\0' 'A-Za-z' 'N-ZA-Mn-za-m' <<< "$1" > /dev/null
