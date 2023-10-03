@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d -empty -o -type f -empty -print0 | xargs -0 -I {} sh -c 'echo -e "{}"'
+find . -type d -empty -printf "%f\n" -o -type f -empty -printf "%f\n"
